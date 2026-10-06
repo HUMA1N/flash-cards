@@ -1,0 +1,11 @@
+{
+  "name": "flash-cards",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Карточки для заучивания с интервальными повторениями (SM-2). Статический сайт без сборки.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "npx --yes serve -l 8000 ."
+  },
+  "license": "MIT"
+}
