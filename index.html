@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0e1014">
+  <meta name="description" content="Карточки для заучивания с интервальными повторениями по алгоритму SM-2. Работает в браузере, без регистрации.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Карточки">
+  <title>Карточки — интервальные повторения</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-maskable-512.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar" id="topbar"></header>
+  <main class="view" id="view">
+    <noscript><p class="empty">Для работы сайта нужен JavaScript.</p></noscript>
+  </main>
+
+  <dialog class="modal" id="modal" aria-label="Окно"></dialog>
+  <dialog class="modal modal-confirm" id="confirm" aria-label="Подтверждение"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="import-file" accept=".json,.txt,.csv,.tsv,application/json,text/plain,text/csv" hidden>
+
+  <script src="js/sm2.js"></script>
+  <script src="js/parse.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/importer.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/samples.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
